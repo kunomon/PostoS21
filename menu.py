@@ -18,6 +18,7 @@ def main():
     while True:
         exibir_menu()
         opcao = input("Escolha uma opção: ")
+
         if opcao == '1':
             valor = float(input("Digite o valor para abastecer com etanol: "))
             litros = bomba1.abastecer_por_valor(valor)
