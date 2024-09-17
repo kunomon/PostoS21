@@ -25,7 +25,7 @@ def main():
             if litros <= 0:
                 print("Quantidade insuficiente na bomba ou valor inválido.")
             else:
-                print(f"Abastecido {litros} litros de etanol.")
+                print(f"Abastecido {litros:.2f} litros de etanol.")
 
         elif opcao == '2':
             litros = float(input("Digite a quantidade de litros para abastecer com etanol: "))
