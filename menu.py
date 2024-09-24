@@ -1,5 +1,5 @@
-
-from bomba_combustivel import BombaEtanol, BombaGasolina
+from BombaGasolina import BombaGasolina
+from BombaEtanol import BombaEtanol
 
 def exibir_menu():
     print("Posto")
@@ -33,7 +33,7 @@ def main():
             if valor <= 0:
                 print("Quantidade insuficiente na bomba ou quantidade de litros inválida.")
             else:
-                print(f"Valor a pagar: R${valor}")
+                print(f"Valor a pagar: R${valor:.2f}")
 
         elif opcao == '3':
             valor = float(input("Digite o valor para abastecer com gasolina: "))
@@ -49,7 +49,7 @@ def main():
             if valor <= 0:
                 print("Quantidade insuficiente na bomba ou quantidade de litros inválida.")
             else:
-                print(f"Valor a pagar: R${valor}")
+                print(f"Valor a pagar: R${valor:.2f}")
 
         elif opcao == '5':
             valor = float(input("Digite o valor para abastecer com gasolina aditivada: "))
@@ -65,7 +65,7 @@ def main():
             if valor <= 0:
                 print("Quantidade insuficiente na bomba ou quantidade de litros inválida.")
             else:
-                print(f"Valor a pagar: R${valor}")
+                print(f"Valor a pagar: R${valor:.2f}")
 
         elif opcao == '7':
             print("Saindo")
